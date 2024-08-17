@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ASMRtist Catalog - /wdg/.one</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="/assets/css/pico.css"/>
+    <link rel="stylesheet" href="/assets/css/custom.css"/>
+  </head>
+  <body>
+    <main class="container">
+      
+<nav>
+  <ul>
+    <li><strong>/wdg/.one</strong></li>
+  </ul>
+
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/posts">Projects</a></li>
+    <li><a href="https://github.com/ktunprasert/wdg-umbrella" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path> </svg></a></li>
+  </ul>
+</nav>
+
+      <h1 id="asmrtist-catalog">ASMRtist Catalog</h1><blockquote>
+Last update: Friday, 16 Aug 2024 <br/>
+Dev: <a href="/tags/anon"> anon </a><br/>
+
+
+Tools: <a href="/tags/Python 3.12">Python 3.12</a>, <a href="/tags/SQLite 3.47">SQLite 3.47</a>, <a href="/tags/Vanilla JS">Vanilla JS</a><br/>
+
+
+Link: <a target="_blank" href="https://asmrtistcatalog.ca/"> https://asmrtistcatalog.ca/ </a><br/>
+Repo: <a target="_blank" href=""></a><br/></blockquote><p style="display:flex; gap: 1rem"><a target="_blank" href="https://boards.4channel.org/g/thread/101915586"> &gt;&gt;/wdg/101915586 </a><a target="_blank" href="https://boards.4channel.org/g/thread/101915586#p101929673"> &gt;&gt;101929673 </a><span style="flex-grow: 1; text-align: end"> 2024-08-16 20:31:00 </span></p><p>Live/done; taking suggestions</p><p>First coding project in a while, was fun. Basically just a search index for ASMR youtube channels. Spent a while writing and rewriting the specifics of how the search actually worked on the backend. Eventually decided on a single contentless FTS index with columns for video title, description, channel, and tags, backed up by a few tables. An extra script checks channels for new uploads every 2 minutes, with which channels checked being decided by a weighting based on how long since the channel was checked, how long since they uploaded, and the average time between uploads in the last year. The frontend is pretty simple; just some HTML files I format values into, with some vanilla JS to do infinite scrolling.</p><p>Currently has 738.5k videos indexed from 3896 channels, with 750k unique tags used 9.67M times. The descriptions are stored compressed, which keeps the DB size to 1.14 GB.</p><p>I actually don&#39;t really care for ASMR all that much, but it made for an easy target for a project. The code&#39;s easily reusable if I ever (for some stupid reason) decide to make another site for some other topic. I&#39;ve got the domain for a year and it only cost me $0.86, so fuck it, it&#39;s public.</p><br/><hr class="thin"/>
+    </main>
+  </body>
+</html>
